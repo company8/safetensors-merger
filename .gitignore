@@ -1,0 +1,5 @@
+venv
+shards/*
+!shards/place_safetensors_here
+output/*
+!output/merged_file_will_be_here
