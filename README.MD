@@ -31,7 +31,7 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
 3. The merged file (e.g., merged_model.safetensors) will be created in 'output' folder.
 ---
 
-## Strip metadata
+## Strip metadata (Optional)
 1. Check for metadata:
     ```bash
     python stripmetadata.py your_model.safetensors
