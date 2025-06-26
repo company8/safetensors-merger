@@ -31,6 +31,11 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
 3. The merged file (e.g., merged_model.safetensors) will be created in 'output' folder.
 ---
 
+## Strip metadata
+1. Run "stripmetadata.py your_model.safetensors" to check if there is metadata
+2. Run "stripmetadata.py --strip your_model.safetensors" to remove the metadata
+3. The your_model_stripped.safetensors model is saved with no metadata in the same folder.
+---
 ## Example
 Suppose you have these files:
 ```
