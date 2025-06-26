@@ -32,8 +32,13 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
 ---
 
 ## Strip metadata
-1. Run "stripmetadata.py your_model.safetensors" to check if there is metadata
-2. Run "stripmetadata.py --strip your_model.safetensors" to remove the metadata
+1. Check for metadata:
+    ```bash
+    python stripmetadata.py your_model.safetensors
+2. To remove metadata:
+    ```bash
+    python stripmetadata.py --strip your_model.safetensors
+    ```
 3. The your_model_stripped.safetensors model is saved with no metadata in the same folder.
 ---
 ## Example
