@@ -42,6 +42,20 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
     ```
 3. The your_model_stripped.safetensors model is saved with no metadata in the same folder.
 ---
+
+## Convert FP32 to BF16 and vice versa (Optional):
+FP32 to BF16:
+    ```bash
+    python convertFP32toBF16.py your_model.safetensors
+    ```
+BF16 to FP32:
+    ```bash
+    python convertBF16toFP32.py your_model.safetensors
+    ```
+Note:
+Make sure you have enough disk space for the conversion.
+---
+
 ## Example
 Suppose you have these files:
 ```
@@ -57,3 +71,4 @@ merged_model.safetensors
 
 ## Credits
 - https://github.com/NotTheStallion/reshard-safetensors
+- https://github.com/soursilver/safetensors-merger
