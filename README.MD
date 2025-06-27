@@ -57,9 +57,9 @@ Make sure you have enough disk space for the conversion.
 ---
 
 ## Convert .pth .pt .bin to .safetensors
-    ```bash
+    
     python convert2safetensors.py your_model.pth
-    ```
+    
 ---
 
 ## Example
