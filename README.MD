@@ -31,7 +31,7 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
 3. The merged file (e.g., merged_model.safetensors) will be created in 'output' folder.
 ---
 
-## Strip metadata (Optional)
+## Strip metadata:
 1. Check for metadata:
     ```bash
     python stripmetadata.py your_model.safetensors
@@ -43,7 +43,7 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
 3. The your_model_stripped.safetensors model is saved with no metadata in the same folder.
 ---
 
-## Convert FP32 to BF16 and vice versa (Optional):
+## Convert FP32 to BF16 and vice versa:
 Make sure you have enough disk space for the conversion.
 
 1. FP32 to BF16:
@@ -53,6 +53,12 @@ Make sure you have enough disk space for the conversion.
 2. BF16 to FP32:
     ```bash
     python convertBF16toFP32.py your_model.safetensors
+    ```
+---
+
+## Convert .pth .pt .bin to .safetensors
+    ```bash
+    python convert2safetensors.py your_model.pth
     ```
 ---
 
