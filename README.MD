@@ -44,16 +44,15 @@ It is useful if you have a model split into parts (such as `model-00001-of-00003
 ---
 
 ## Convert FP32 to BF16 and vice versa (Optional):
-FP32 to BF16:
+1. Make sure you have enough disk space for the conversion.
+2. FP32 to BF16:
     ```bash
     python convertFP32toBF16.py your_model.safetensors
     ```
-BF16 to FP32:
+3. BF16 to FP32:
     ```bash
     python convertBF16toFP32.py your_model.safetensors
     ```
-Note:
-Make sure you have enough disk space for the conversion.
 ---
 
 ## Example
