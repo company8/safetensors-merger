@@ -21,7 +21,7 @@ def convert_any_pytorch_model_to_safetensors(input_path, output_path=None):
     if not isinstance(data, dict):
         raise TypeError("Loaded data is not a dictionary of tensors.")
 
-    tensor_dict = {k: v for k, v in data.items() if isinstance(v, torch.Tensor)}
+    tensor_dict = {k: v.clone().detach() for k, v in data.items() if isinstance(v, torch.Tensor)}
 
     if not tensor_dict:
         raise ValueError("No tensor data found in the input file.")
