@@ -20,7 +20,7 @@ def convert_bf16_to_fp32(input_path, output_path=None):
     fp32_tensors = {k: v.to(torch.float32) if v.dtype == torch.bfloat16 else v for k, v in tensors.items()}
 
     if output_path is None:
-        output_path = input_path.replace(".safetensors", "_fp32.safetensors")
+        output_path = input_path.replace(".safetensors", "-FP32.safetensors")
 
     try:
         save_file(fp32_tensors, output_path)
