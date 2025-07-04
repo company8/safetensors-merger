@@ -21,7 +21,7 @@ def safetensors_fp32_to_bf16(input_file, output_file=None):
         else:
             print(f"Skipping non-tensor: {k}")
 
-    output_file = output_file or input_file.replace(".safetensors", "_bf16.safetensors")
+    output_file = output_file or input_file.replace(".safetensors", "-BF16.safetensors")
     print(f"Saving to: {output_file}")
     save_file(bf16_tensors, output_file)
     print("Conversion complete.")
